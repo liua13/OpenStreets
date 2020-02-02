@@ -1,0 +1,17 @@
+<div id="signup-wrapper" class="wrapper">
+  <h1>Signup</h1>
+  <p class="notloggedin">You may only post if you are logged in</p>
+	<form id='signup' id="signup" method="POST" action="/signedup">
+  	<div><input type='text' name='username' placeholder="Username"></div>
+  	<div><input type='password' name='password' placeholder="Password"></div>
+    <div><input type='password' name='confirmPassword' placeholder="Confirm Password"></div>
+    <% if (incorrectSignup!="") { %>
+        <p class="alert alert-danger"><%= incorrectSignup %></p>
+      <% } %>
+  	<input type="submit" value="submit">
+ </form>
+ <span>Already an account?
+    <a onclick="switchAccount('login');">Log in here!</a>
+  <span>
+
+</div>

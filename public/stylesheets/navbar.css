@@ -1,18 +1,27 @@
+.navbar-nav{
+	float:right;
+	margin-right: 50px;
+}
+
 #white{
 	color:white;
+	position: relative;
+	display: inline-block;
+	padding-top: 20px 0px 5px 0px;
 }
 
-#white:hover{
-	color:gray;
+.navbar-nav #white:after{
+	content: "";
+	position: absolute;
+    width: 0;
+    left: 15px;
+    top: 62.9%;
+    height: 0.5px;
+    background-color: white;
+    margin: auto;
+    transition: width .5s ease-in-out;
 }
 
-.navbar-nav{
-  text-transform: uppercase;
-  float:right;
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar-nav {
-    float:left;
-  }
+.navbar-nav #white:hover:after{
+	width: 53%;
 }

@@ -6,7 +6,8 @@ var markerSchema = new mongoose.Schema({
 	address: String,
 	date: Date,
 	icon: String,
-	details: String
+	details: String,
+	postedby: String
 });
 var Marker = mongoose.model('Marker', markerSchema);
 

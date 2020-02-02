@@ -13,7 +13,15 @@
 		<%- include ../partials/modal.ejs %>
 	</div>
 
+	<% if(username==""){ %>
+		<%- include ../partials/login.ejs %>
+		<%- include ../partials/signup.ejs %>
+	<% } else { %>
+		<h1 class="wrapper">Hello, <%= username %>!</div>
+	<% } %>
+
 	<script src="/javascript/map.js"></script>
+	<script src="/javascript/account.js"></script>
 
 	<script>
 		displayMarkers(<%-JSON.stringify(data)%>);

@@ -1,4 +1,5 @@
 // sets up map
+var username = "";
 var map = L.map("mapid").setView([42.361145, -71.057083], 8);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGl1YTEiLCJhIjoiY2s1dmk1cHFnMWt0bDNrbm51bnp4dWpnNSJ9.bC8XaM5r2Kot4XVVD5l76g', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -49,7 +50,7 @@ map.on("click", function(e){
     		}
     	}
     	var addressInfo = address[0] + " " + address[1] + "<br/>" + address[2] + ", " + address[3] + ", " + address[4] + "<br/>" + address[5];
-		showPopup(addressInfo, [lat, lng]);
+		showPopup(addressInfo, [lat, lng], username);
 	});
 });
 
@@ -60,9 +61,11 @@ function hidePopup(){
 function showPopup(address, coordinates){
 	$("#address").html(address);
 
+	$("#username").val(username);
 	$("#addressInput").val(address);
 	$("#latInput").val(coordinates[0]);
 	$("#lngInput").val(coordinates[1]);
+
 	$("#popupForm").show();
 }
 
@@ -75,9 +78,12 @@ function displayMarkers(data){
 	var iconName = ["trash", "leaves", "snow"];
 	var icon = [trashIcon, leavesIcon, snowIcon];
 	for(var i = 0; i < data.length; i++){
+		console.log(data[i]);
 		var date = new Date(data[i].date);
 		var date = ("0" + (date.getMonth() + 1)).slice(-2) + "/" + ("0" + date.getDate()).slice(-2) + "/" + date.getFullYear();
-		var popup = "<center><b>" + data[i].address + "</b><br/>" + date + "</center><br/>" + "<b>Category:</b> " + data[i].icon + "<br/><b>Details:</b> " + data[i].details;
+		var popup = "<center><b>" + data[i].address + "</b><br/>" + date + "</center><br/>" + 
+			"<b>Category:</b> " + data[i].icon + "<br/><b>Details:</b> " + data[i].details + 
+			"<br/><b>Posted By:</b> " + data[i].postedby;
 		var newIcon;
 		if(iconName[0] == data[i].icon){
 			newIcon = icon[0];

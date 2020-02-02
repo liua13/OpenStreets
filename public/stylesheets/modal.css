@@ -84,6 +84,11 @@ textarea{
     padding: 5px 10px;
 }
 
+#postButton:hover{
+    color: white;
+    background-color: black;
+}
+
 textarea:focus {
     outline: none;
 }
@@ -93,8 +98,7 @@ textarea:focus {
     margin-bottom:20px;
 }
 
-#error{
-    text-align:center;
+.notloggedin{
     color:red;
+    text-align:center;
 }
-
