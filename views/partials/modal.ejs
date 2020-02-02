@@ -1,0 +1,24 @@
+<div class="popup-wrapper">
+  <div id="popup-container">
+    <p id="xhidepopup" onclick="hidePopup();">X</p>
+    <form method="POST" action="/map">
+    	<p id="address"></p>
+
+    	<input id="addressInput" name="address" style="display:none;">
+    	<input id="latInput" name="latitude" style="display:none;">
+    	<input id="lngInput" name="longitude" style="display:none;">
+
+    	<div align="center">
+    		<input type="radio" value="trash" id="trash" name="icon">
+    		<label for="trash"><img id="trashIcon" class="icons" src="/images/trash.png" onclick="selectIcon('#trashIcon');"></label>
+    		<input type="radio" value="leaves" id="leaves" name="icon">
+    		<label for="leaves"><img id="leavesIcon" class="icons" src="/images/leaves.png" onclick="selectIcon('#leavesIcon');"></label>
+    		<input type="radio" value="snow" id="snow" name="icon">
+    		<label for="snow"><img id="snowIcon" class="icons" src="/images/snow.jpg" onclick="selectIcon('#snowIcon');"></label>
+    	</div>
+        <textarea name="details" placeholder="Enter details" rows="1"></textarea>
+        <p id="error">Please specify the issue</p>
+        <div align="right"><input id="postButton" type="submit" value="post"></input></div>
+    </form>
+  </div>
+</div>

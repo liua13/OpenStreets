@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "open-streets",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A crowdsourcing platform",
   "engines": {
     "node": "12.x"
   },
@@ -11,8 +11,16 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-react-views": "^0.11.0",
+    "leaflet-geosearch": "^2.7.0",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.11",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-modal": "^3.11.1"
   },
   "devDependencies": {
     "request": "^2.81.0",
@@ -20,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/liua13/OpenStreets"
   },
   "keywords": [
     "node",

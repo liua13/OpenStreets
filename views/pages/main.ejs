@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+  <link rel="stylesheet" href="/stylesheets/map.css">
+</head>
+
+<body>
+	<% include ../partials/nav.ejs %>
+	<div id="mapid"></div>
+
+	<div class="popup-position" id="popupForm">
+		<%- include ../partials/modal.ejs %>
+	</div>
+
+	<script src="/javascript/map.js"></script>
+
+	<script>
+		displayMarkers(<%-JSON.stringify(data)%>);
+	</script>
+
+</body>
+</html>

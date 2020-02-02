@@ -1,0 +1,16 @@
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0px;
+}
+
+#mapid {
+	margin-left:50px;
+	height:75%;
+	width:50%;
+	float:left;
+}
+
+#street{
+	text-transform: capitalize;
+}
