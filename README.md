@@ -4,7 +4,7 @@ Litter in beaches, parks, and our own streets not only harms the environment, bu
 
 **Demo:** https://youtu.be/-Zo6aj9gwAw
 
-**Submitted to:** TechTogether Boston 2020 Hackathon and won the *MLH Best use of MongoDB Atlas Prize*
+**Submitted to:** [TechTogether Boston 2020 Hackathon and won the *MLH Best use of MongoDB Atlas Prize] (https://devpost.com/software/open-streets-9gr5pf)*
 
 **Technologies Used:**
 - HTML/CSS
