@@ -11,3 +11,13 @@ Litter in beaches, parks, and our own streets not only harms the environment, bu
 - Javascript (jQuery, Node.js, Leaflet.js, EJS)
 - Nominatim
 - MongoDB / Mongoose
+
+**Steps to Install (Locally):**
+1. `git clone https://github.com/liua13/OpenStreets`
+2. `cd OpenStreets`
+  To download all necessary dependencies in the `package.json` file:
+3. `npm install` 
+  Start the server:
+4. `node index.js`
+
+The project runs on `127.0.0.1:5000` or `localhost:5000` by default. If there are any issues, check to make sure that all necessary dependencies are installed.
