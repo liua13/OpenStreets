@@ -16,11 +16,11 @@ Litter in beaches, parks, and our own streets not only harms the environment, bu
 1. `git clone https://github.com/liua13/OpenStreets`
 2. `cd OpenStreets`
 
-  To download all necessary dependencies in the `package.json` file:
+&nbsp;&nbsp;&nbsp; To download all necessary dependencies in the `package.json` file:
   
 3. `npm install` 
 
-  Start the server:
+&nbsp;&nbsp;&nbsp; Start the server:
   
 4. `node index.js`
 
