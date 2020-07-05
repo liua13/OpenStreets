@@ -4,7 +4,7 @@ Litter in beaches, parks, and our own streets not only harms the environment, bu
 
 **Demo:** https://youtu.be/-Zo6aj9gwAw
 
-**Submitted to:** TechTogether Boston 2020 Hackathon and won the *MLH Best use of MongoDB Atlas Prize*
+**Submitted to:** TechTogether Boston 2020 Hackathon and won the [MLH Best use of MongoDB Atlas Prize](https://devpost.com/software/open-streets-9gr5pf)
 
 **Technologies Used:**
 - HTML/CSS
@@ -12,3 +12,16 @@ Litter in beaches, parks, and our own streets not only harms the environment, bu
 - Nominatim
 - MongoDB / Mongoose
 
+**Steps to Install (terminal/command line):**
+1. `git clone https://github.com/liua13/OpenStreets`
+2. `cd OpenStreets`
+
+&nbsp;&nbsp;&nbsp; To download all necessary dependencies (in the `package.json` file):
+  
+3. `npm install` 
+
+&nbsp;&nbsp;&nbsp; Start the server:
+  
+4. `node index.js`
+
+The project runs on `127.0.0.1:5000` or `localhost:5000` by default. If there are any issues, check to make sure that all necessary dependencies are installed.
