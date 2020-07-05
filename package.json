@@ -13,19 +13,19 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
-    "ejs": "^2.5.6",
+    "ejs": "^2.7.4",
     "express": "^4.15.2",
     "express-react-views": "^0.11.0",
     "leaflet-geosearch": "^2.7.0",
-    "mongodb": "^3.5.2",
-    "mongoose": "^5.8.11",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-modal": "^3.11.1"
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.21",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.11.2"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "request": "^2.88.2",
+    "tape": "^4.13.3"
   },
   "repository": {
     "type": "git",
